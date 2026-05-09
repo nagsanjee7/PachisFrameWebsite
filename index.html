@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Production House</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Courier+Prime:wght@400;700&family=DM+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles-index.css">
+</head>
+</head>
+<body>
+
+<!-- SHUTTER REVEAL -->
+<div class="shutter" id="shutter">
+  <div class="shutter-blade"></div>
+  <div class="shutter-blade"></div>
+  <div class="shutter-blade"></div>
+  <div class="shutter-blade"></div>
+  <div class="shutter-blade"></div>
+</div>
+
+<!-- GRAIN -->
+<div class="grain"></div>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- FILM FRAME BORDERS -->
+<div class="film-strip-top">
+  <div class="sprockets" id="sprockets-top"></div>
+</div>
+<div class="film-strip-bottom">
+  <div class="sprockets" id="sprockets-bottom"></div>
+</div>
+<div class="film-strip-left">
+  <div id="sprockets-left" style="display:flex;flex-direction:column;align-items:center;gap:var(--sprocket-gap);"></div>
+</div>
+<div class="film-strip-right">
+  <div id="sprockets-right" style="display:flex;flex-direction:column;align-items:center;gap:var(--sprocket-gap);"></div>
+</div>
+
+<!-- FRAME COUNTER -->
+<div class="frame-counter" id="frameCounter">00:00:00:00</div>
+
+<!-- MAIN CONTENT -->
+<div class="frame-content">
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">
+      <div class="logo-text">
+        <div class="logo-main">Pachis <span>Frame</span></div>
+        <div class="logo-sub">Production House · Est. 2015</div>
+      </div>
+      <img src="pf-logo.png" alt="PF Logo" class="pf-logo" title="Pachis Frame">
+    </div>
+    <ul class="nav-links">
+      <li><a href="work.html">Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" style="background-image: linear-gradient(135deg, rgba(10,10,8,0.7) 0%, rgba(10,10,8,0.5) 50%, rgba(10,10,8,0.7) 100%), url('bg-cinematic.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="hero-eyebrow">Frame 25 / Sequence 01</div>
+    <h1 class="hero-title reveal">
+      Stories<br>told in <em>every</em><br>frame.
+    </h1>
+    <p class="hero-body reveal">
+      We are Pachis Frame — a full-service production house crafting cinema, music videos, commercials, and web series that live beyond the screen.
+    </p>
+    <div class="hero-cta reveal">
+      <a href="work.html" class="btn-primary">View Our Work</a>
+      <a href="#contact" class="btn-ghost">Start a Project</a>
+    </div>
+    <div class="hero-frame-no">25</div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="ticker"></div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="section-label">What We Do</div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-num">01 / 05</div>
+        <h3 class="service-title">Film &amp;<br>Cinema</h3>
+        <p class="service-desc">Feature films, short films, and independent cinema with a vision that commands the big screen.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">02 / 05</div>
+        <h3 class="service-title">Music<br>Videos</h3>
+        <p class="service-desc">Visual storytelling synced to sound — from concept to colour grade, we make tracks unforgettable.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">03 / 05</div>
+        <h3 class="service-title">Ads &amp;<br>Commercials</h3>
+        <p class="service-desc">Brand films and TVC campaigns that don't feel like ads — they feel like moments.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">04 / 05</div>
+        <h3 class="service-title">TV &amp; Web<br>Series</h3>
+        <p class="service-desc">Long-form episodic content built for OTT platforms and digital audiences who demand quality.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">05 / 05</div>
+        <h3 class="service-title">Full-Service<br>Production</h3>
+        <p class="service-desc">Pre-production, shoot, post — a single team, end to end. No handoffs. All accountability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="section-label">Selected Work</div>
+    <div class="work-grid reveal">
+      <a href="work.html" class="work-item" onclick="document.getElementById('lightboxInner') && (window.location.hash = '#videos-doors-to-kedarnath')">
+        <div class="work-bg" style="background-image:url('https://img.youtube.com/vi/a6baR1G6ljI/maxresdefault.jpg'); background-size: cover; background-position: center;">
+          <div class="work-thumb-title">Doors To Kedarnath</div>
+        </div>
+        <div class="work-frame-deco"></div>
+        <div class="work-item-inner">
+          <div class="work-tag">Tourism · Pilgrimage</div>
+          <div class="work-name">Doors To Kedarnath</div>
+        </div>
+      </a>
+      <a href="work.html" class="work-item" onclick="document.getElementById('lightboxInner') && (window.location.hash = '#videos-iocl')">
+        <div class="work-bg" style="background-image:url('https://img.youtube.com/vi/2nuiPxfGo1U/maxresdefault.jpg'); background-size: cover; background-position: center;">
+          <div class="work-thumb-title">Journey Of Fuel — IOCL</div>
+        </div>
+        <div class="work-frame-deco"></div>
+        <div class="work-item-inner">
+          <div class="work-tag">Documentary · Energy</div>
+          <div class="work-name">Journey Of Fuel — IOCL</div>
+        </div>
+      </a>
+      <a href="work.html" class="work-item" onclick="document.getElementById('lightboxInner') && (window.location.hash = '#videos-build-india')">
+        <div class="work-bg" style="background-image:url('https://img.youtube.com/vi/jTWuw_oBtJY/maxresdefault.jpg'); background-size: cover; background-position: center;">
+          <div class="work-thumb-title">Build India Series — Ep 1</div>
+        </div>
+        <div class="work-frame-deco"></div>
+        <div class="work-item-inner">
+          <div class="work-tag">Broadcast · Discovery</div>
+          <div class="work-name">Build India Series — Ep 1</div>
+        </div>
+      </a>
+    </div>
+    <div style="margin-top:40px;text-align:center;">
+      <a href="work.html" class="btn-primary" style="display:inline-block;">See All Projects →</a>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-label">Featured Projects</div>
+    <div class="projects-showcase reveal">
+      <div class="project-card">
+        <div class="project-num">01</div>
+        <h3 class="project-title">Para Athlete Documentary Series</h3>
+        <p class="project-desc">A powerful three-part documentary series celebrating extraordinary athletes, their journey, and resilience. Shot across multiple locations with intimate storytelling.</p>
+        <div class="project-meta">Documentary · Sports</div>
+      </div>
+      <div class="project-card">
+        <div class="project-num">02</div>
+        <h3 class="project-title">Incredible India Campaign</h3>
+        <p class="project-desc">Nine cinematic films showcasing India's cultural diversity and tourism destinations. Part of a national tourism initiative reaching millions globally.</p>
+        <div class="project-meta">Tourism · National Campaign</div>
+      </div>
+      <div class="project-card">
+        <div class="project-num">03</div>
+        <h3 class="project-title">Infrastructure & Innovation</h3>
+        <p class="project-desc">Documentary films exploring India's cutting-edge infrastructure projects, from freight corridors to energy initiatives. Technical excellence meets visual storytelling.</p>
+        <div class="project-meta">Documentary · Corporate</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-label">About Us</div>
+    <div class="about-layout">
+      <div class="about-stat-grid reveal">
+        <div class="about-stat">
+          <div class="about-stat-num">25<em>+</em></div>
+          <div class="about-stat-label">Years Of Experience</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">4<em>K</em></div>
+          <div class="about-stat-label">Resolution Standard</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">11<em>+</em></div>
+          <div class="about-stat-label">Years of Vision</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">7<em>x</em></div>
+          <div class="about-stat-label">National Awards Won</div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <h2>We don't just shoot.<br>We <em>compose</em>.</h2>
+        <p>Pachis Frame was built on the belief that every frame of film is a decision — not an accident. Our team of directors, cinematographers, editors, and sound designers bring singular intent to every project.</p>
+        <p>Based in India, reaching everywhere. From indie short films to national commercial campaigns, we treat each project as our defining work.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="reveal">
+      <div class="section-label" style="margin-bottom:40px;">Start a Project</div>
+      <h2 class="contact-heading">Let's make<br>something <em>real</em>.</h2>
+      <p class="contact-sub">Have a project in mind? We'd love to hear about it. Tell us what you're creating and we'll be in touch within 48 hours.</p>
+    </div>
+    <div class="contact-form reveal">
+      <div class="form-row">
+        <div class="field"><label>Name</label><input type="text" placeholder="Your name"></div>
+        <div class="field"><label>Email</label><input type="email" placeholder="your@email.com"></div>
+      </div>
+      <div class="field"><label>Project Type</label>
+        <select>
+          <option value="">Select a service</option>
+          <option>Film & Cinema</option>
+          <option>Music Video</option>
+          <option>Commercial / Ad</option>
+          <option>TV / Web Series</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="field"><label>Tell Us More</label><textarea placeholder="Brief description of your project…"></textarea></div>
+      <button class="form-submit" type="button">
+        <span>Send Message</span>
+        <span>→</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-copy">© 2024 Pachis Frame Production House</div>
+    <ul class="footer-social">
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Vimeo</a></li>
+      <li><a href="#">YouTube</a></li>
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+  </footer>
+
+</div><!-- /frame-content -->
+
+<script>
+// CURSOR
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+let mx = 0, my = 0, rx = 0, ry = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+function animCursor() {
+  cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
+  rx += (mx - rx) * 0.14; ry += (my - ry) * 0.14;
+  ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+  requestAnimationFrame(animCursor);
+}
+animCursor();
+document.querySelectorAll('a, button, .service-card, .work-item').forEach(el => {
+  el.addEventListener('mouseenter', () => { cursor.style.width = '16px'; cursor.style.height = '16px'; ring.style.width = '56px'; ring.style.height = '56px'; });
+  el.addEventListener('mouseleave', () => { cursor.style.width = '8px'; cursor.style.height = '8px'; ring.style.width = '36px'; ring.style.height = '36px'; });
+});
+
+// SPROCKETS
+function makeSprockets(id, count, vertical = false) {
+  const c = document.getElementById(id);
+  for (let i = 0; i < count; i++) {
+    const s = document.createElement('div');
+    s.className = vertical ? 'sprocket-v' : 'sprocket';
+    c.appendChild(s);
+  }
+}
+makeSprockets('sprockets-top', 60);
+makeSprockets('sprockets-bottom', 60);
+makeSprockets('sprockets-left', 30, true);
+makeSprockets('sprockets-right', 30, true);
+
+// FRAME COUNTER
+let frames = 0;
+const fc = document.getElementById('frameCounter');
+setInterval(() => {
+  frames++;
+  const f = frames % 25;
+  const s = Math.floor(frames / 25) % 60;
+  const m = Math.floor(frames / 1500) % 60;
+  const h = Math.floor(frames / 90000);
+  fc.textContent = `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}:${String(f).padStart(2,'0')}`;
+}, 40);
+
+// TICKER
+const items = ['Film & Cinema','Music Videos','TV & Web Series','Ads & Commercials','Full Production','Post Production','Color Grading','Sound Design'];
+const track = document.getElementById('ticker');
+let html = '';
+for (let i = 0; i < 3; i++) {
+  items.forEach(t => { html += `<span class="ticker-item"><span>◆</span>${t}</span>`; });
+}
+track.innerHTML = html;
+
+// SCROLL REVEAL
+const reveals = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), 60);
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+reveals.forEach(r => obs.observe(r));
+
+// SHUTTER — remove after animation
+setTimeout(() => { document.getElementById('shutter').style.display = 'none'; }, 1400);
+</script>
+</body>
+</html>

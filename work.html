@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Work — Pachis Frame</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Courier+Prime:wght@400;700&family=DM+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles-work.css">
+</head>
+</head>
+<body>
+
+<!-- SHUTTER -->
+<div class="shutter" id="shutter">
+  <div class="shutter-blade"></div><div class="shutter-blade"></div>
+  <div class="shutter-blade"></div><div class="shutter-blade"></div>
+  <div class="shutter-blade"></div>
+</div>
+
+<div class="grain"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="film-strip-top"><div class="sprockets" id="sprockets-top"></div></div>
+<div class="film-strip-bottom"><div class="sprockets" id="sprockets-bottom"></div></div>
+<div class="film-strip-left"><div id="sprockets-left" style="display:flex;flex-direction:column;align-items:center;gap:var(--sprocket-gap);"></div></div>
+<div class="film-strip-right"><div id="sprockets-right" style="display:flex;flex-direction:column;align-items:center;gap:var(--sprocket-gap);"></div></div>
+<div class="frame-counter" id="frameCounter">00:00:00:00</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-inner" id="lightboxInner">
+    <button class="lightbox-close" id="lightboxClose">✕&nbsp;&nbsp;Close</button>
+    <div id="lightboxContent"></div>
+    <div class="lightbox-meta">
+      <div>
+        <div class="lightbox-cat" id="lightboxCat"></div>
+        <div class="lightbox-title" id="lightboxTitle"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="frame-content">
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">
+      <div class="logo-text">
+        <a href="index.html" class="logo-main">Pachis <span>Frame</span></a>
+        <div class="logo-sub">Production House </div>
+      </div>
+      <img src="pf-logo.png" alt="PF Logo" class="pf-logo" title="Pachis Frame">
+      <a href="index.html" class="back-btn">← Back to Home</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header" style="background-image: linear-gradient(135deg, rgba(10,10,8,0.8) 0%, rgba(10,10,8,0.6) 50%, rgba(10,10,8,0.8) 100%), url('bg-cinematic.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="page-eyebrow">OUR WORK</div>
+    <h1 class="page-title">Every <em>frame</em>,<br>a decision.</h1>
+    <p class="page-subtitle">Discovery Channel, National Geographic Channel, History TV18, JioHotstar, CNA, CNBC-TV18, Doordarshan, Ministry of Culture, UP Tourism, IOCL — some of our partners.</p>
+    <div class="page-frame-no">PF</div>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All Work</button>
+    <button class="filter-btn" data-filter="documentary">Documentary &amp; Series</button>
+    <button class="filter-btn" data-filter="broadcast">Broadcast</button>
+    <button class="filter-btn" data-filter="tourism">Tourism</button>
+    <button class="filter-btn" data-filter="culture">Culture &amp; Heritage</button>
+    <button class="filter-btn" data-filter="gi">GI Films</button>
+    <button class="filter-btn" data-filter="promo">Promos &amp; Shorts</button>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 1 — FEATURED / STANDALONE FILMS
+  ═══════════════════════════════════════════════ -->
+  <div class="cat-section">
+    <div class="cat-header reveal">
+      <div class="cat-label">Featured Films</div>
+      <div class="cat-line"></div>
+      <div class="cat-count">08 Films</div>
+    </div>
+  </div>
+  <div class="works-section">
+    <div class="video-grid featured-first" id="grid-featured">
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="_B_gtZFF--w" data-source="youtube"
+           data-title="Postcards From Uttar Pradesh" data-cat="Tourism · UP">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/_B_gtZFF--w/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div>
+        <div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info">
+          <div class="video-cat">Tourism · UP</div>
+          <div class="video-title">Postcards From Uttar Pradesh</div>
+        </div>
+      </div>
+
+      <div class="video-card reveal" data-category="documentary"
+           data-videoid="2nuiPxfGo1U" data-source="youtube"
+           data-title="Journey Of Fuel — IOCL" data-cat="Documentary · Energy">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/2nuiPxfGo1U/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div>
+        <div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info">
+          <div class="video-cat">Documentary · Energy</div>
+          <div class="video-title">Journey Of Fuel — IOCL</div>
+        </div>
+      </div>
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="a6baR1G6ljI" data-source="youtube"
+           data-title="Doors To Kedarnath" data-cat="Tourism · Pilgrimage">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/a6baR1G6ljI/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div>
+        <div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info">
+          <div class="video-cat">Tourism · Pilgrimage</div>
+          <div class="video-title">Doors To Kedarnath</div>
+        </div>
+      </div>
+
+      <div class="video-card reveal" data-category="culture"
+           data-videoid="5Mc6IzIeyDk" data-source="youtube"
+           data-title="India On A Mission — Ministry of Culture" data-cat="Culture · Ministry of Culture">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/5Mc6IzIeyDk/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div>
+        <div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info">
+          <div class="video-cat">Culture · Ministry of Culture</div>
+          <div class="video-title">India On A Mission</div>
+        </div>
+      </div>
+
+      <div class="video-card reveal" data-category="culture"
+           data-videoid="uENxWjMSAik" data-source="youtube"
+           data-title="India The Land Of Timeless Culture — Ministry of Culture" data-cat="Culture · Ministry of Culture">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/uENxWjMSAik/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div>
+        <div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info">
+          <div class="video-cat">Culture · Ministry of Culture</div>
+          <div class="video-title">India The Land Of Timeless Culture</div>
+        </div>
+      </div>
+
+      <div class="video-card reveal" data-category="documentary"
+           data-videoid="wspP2FaLEd8" data-source="youtube"
+           data-title="Extreme Tech: The Freight Corridor Film" data-cat="Documentary · Infrastructure">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/wspP2FaLEd8/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div>
+        <div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info">
+          <div class="video-cat">Documentary · Infrastructure</div>
+          <div class="video-title">Extreme Tech: The Freight Corridor Film</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 2 — PARA ATHLETE SERIES
+  ═══════════════════════════════════════════════ -->
+  <div class="cat-section">
+    <div class="cat-header reveal">
+      <div class="cat-label">Para Athlete Film Series</div>
+      <div class="cat-line"></div>
+      <div class="cat-count">03 Films</div>
+    </div>
+  </div>
+  <div class="works-section">
+    <div class="video-grid" id="grid-para">
+
+      <div class="video-card reveal" data-category="documentary"
+           data-videoid="EXRk9Vy6BZ0" data-source="youtube"
+           data-title="Para Athlete Film 1" data-cat="Documentary · Sports">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/EXRk9Vy6BZ0/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div>
+        <div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info">
+          <div class="video-cat">Documentary · Sports</div>
+          <div class="video-title">Para Athlete Film 1</div>
+        </div>
+      </div>
+
+      <div class="video-card reveal" data-category="documentary"
+           data-videoid="6yxaTI1Kacs" data-source="youtube"
+           data-title="Para Athlete Film 2" data-cat="Documentary · Sports">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/6yxaTI1Kacs/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div>
+        <div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info">
+          <div class="video-cat">Documentary · Sports</div>
+          <div class="video-title">Para Athlete Film 2</div>
+        </div>
+      </div>
+
+      <div class="video-card reveal" data-category="documentary"
+           data-videoid="1Hbpo1EiDGc" data-source="youtube"
+           data-title="Para Athlete Film 3" data-cat="Documentary · Sports">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/1Hbpo1EiDGc/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div>
+        <div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info">
+          <div class="video-cat">Documentary · Sports</div>
+          <div class="video-title">Para Athlete Film 3</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 3 — INCREDIBLE INDIA SERIES
+  ═══════════════════════════════════════════════ -->
+  <div class="cat-section">
+    <div class="cat-header reveal">
+      <div class="cat-label">Incredible India Series</div>
+      <div class="cat-line"></div>
+      <div class="cat-count">09 Films</div>
+    </div>
+  </div>
+  <div class="works-section">
+    <div class="video-grid" id="grid-incredibleindia">
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="qRhvvIU5agM" data-source="youtube"
+           data-title="Incredible India — Film 1" data-cat="Tourism · Incredible India">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/qRhvvIU5agM/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Incredible India</div><div class="video-title">Incredible India — Film 1</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="4m4Uq9i8qxs" data-source="youtube"
+           data-title="Incredible India — Film 2" data-cat="Tourism · Incredible India">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/4m4Uq9i8qxs/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Incredible India</div><div class="video-title">Incredible India — Film 2</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="MO3rZ37IDK4" data-source="youtube"
+           data-title="Incredible India — Film 3" data-cat="Tourism · Incredible India">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/MO3rZ37IDK4/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Incredible India</div><div class="video-title">Incredible India — Film 3</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="YrK4bOkpATE" data-source="youtube"
+           data-title="Incredible India — Film 4" data-cat="Tourism · Incredible India">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/YrK4bOkpATE/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Incredible India</div><div class="video-title">Incredible India — Film 4</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="whDSqlfqtlg" data-source="youtube"
+           data-title="Incredible India — Film 5" data-cat="Tourism · Incredible India">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/whDSqlfqtlg/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Incredible India</div><div class="video-title">Incredible India — Film 5</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="2HBpbGDFO8s" data-source="youtube"
+           data-title="Incredible India — Film 6" data-cat="Tourism · Incredible India">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/2HBpbGDFO8s/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Incredible India</div><div class="video-title">Incredible India — Film 6</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="ybvDpIU4OSk" data-source="youtube"
+           data-title="Incredible India — Film 7" data-cat="Tourism · Incredible India">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/ybvDpIU4OSk/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Incredible India</div><div class="video-title">Incredible India — Film 7</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="XbF7Qbi66OY" data-source="youtube"
+           data-title="Incredible India — Film 8" data-cat="Tourism · Incredible India">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/XbF7Qbi66OY/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Incredible India</div><div class="video-title">Incredible India — Film 8</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="0FHxz-ikoU4" data-source="youtube"
+           data-title="Incredible India — Film 9" data-cat="Tourism · Incredible India">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/0FHxz-ikoU4/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Incredible India</div><div class="video-title">Incredible India — Film 9</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 4 — BUILD INDIA SERIES
+  ═══════════════════════════════════════════════ -->
+  <div class="cat-section">
+    <div class="cat-header reveal">
+      <div class="cat-label">Build India Series — Discovery / CNBC-TV18</div>
+      <div class="cat-line"></div>
+      <div class="cat-count">15 Episodes</div>
+    </div>
+  </div>
+  <div class="works-section">
+    <div class="video-grid" id="grid-buildindia">
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="jTWuw_oBtJY" data-source="youtube"
+           data-title="Build India Series — Ep 1" data-cat="Broadcast · Discovery Channel">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/jTWuw_oBtJY/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Discovery Channel</div><div class="video-title">Build India Series — Ep 1</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="-Cwk-nuMx7U" data-source="youtube"
+           data-title="Build India Series — Ep 2" data-cat="Broadcast · Discovery Channel">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/-Cwk-nuMx7U/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Discovery Channel</div><div class="video-title">Build India Series — Ep 2</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="j55F1gL2XO8" data-source="youtube"
+           data-title="Build India Series — Ep 3" data-cat="Broadcast · Discovery Channel">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/j55F1gL2XO8/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Discovery Channel</div><div class="video-title">Build India Series — Ep 3</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="HFkU7lZjG0E" data-source="youtube"
+           data-title="Build India Series — Ep 4" data-cat="Broadcast · Discovery Channel">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/HFkU7lZjG0E/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Discovery Channel</div><div class="video-title">Build India Series — Ep 4</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="zaFuemRJlSE" data-source="youtube"
+           data-title="Build India Series — Ep 5" data-cat="Broadcast · Discovery Channel">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/zaFuemRJlSE/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Discovery Channel</div><div class="video-title">Build India Series — Ep 5</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="fEWGQwNhNB8" data-source="youtube"
+           data-title="Build India Series — Ep 6" data-cat="Broadcast · Discovery Channel">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/fEWGQwNhNB8/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Discovery Channel</div><div class="video-title">Build India Series — Ep 6</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="XD5-wzLCQTE" data-source="youtube"
+           data-title="Build India Series — Ep 7" data-cat="Broadcast · Discovery Channel">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/XD5-wzLCQTE/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Discovery Channel</div><div class="video-title">Build India Series — Ep 7</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="HEJBFNecsIA" data-source="youtube"
+           data-title="Build India Series — Ep 8" data-cat="Broadcast · Discovery Channel">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/HEJBFNecsIA/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Discovery Channel</div><div class="video-title">Build India Series — Ep 8</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="QM6WQ2ZDvts" data-source="youtube"
+           data-title="Build India Series — Ep 9" data-cat="Broadcast · Discovery Channel">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/QM6WQ2ZDvts/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Discovery Channel</div><div class="video-title">Build India Series — Ep 9</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="f9yNM8xARi8" data-source="youtube"
+           data-title="Build India Series — Ep 10" data-cat="Broadcast · Discovery Channel">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/f9yNM8xARi8/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Discovery Channel</div><div class="video-title">Build India Series — Ep 10</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="nvNVYXzQwLo" data-source="youtube"
+           data-title="Build India Series — Ep 11" data-cat="Broadcast · Discovery Channel">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/nvNVYXzQwLo/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Discovery Channel</div><div class="video-title">Build India Series — Ep 11</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="m8gb6R8pz40" data-source="youtube"
+           data-title="Build India Series — Ep 12" data-cat="Broadcast · Discovery Channel">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/m8gb6R8pz40/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Discovery Channel</div><div class="video-title">Build India Series — Ep 12</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="bK5sveA7hng" data-source="youtube"
+           data-title="Build India Series — Ep 13" data-cat="Broadcast · Discovery Channel">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/bK5sveA7hng/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Discovery Channel</div><div class="video-title">Build India Series — Ep 13</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="z0sQPzvPqnU" data-source="youtube"
+           data-title="Build India Series — Ep 14" data-cat="Broadcast · Discovery Channel">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/z0sQPzvPqnU/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Discovery Channel</div><div class="video-title">Build India Series — Ep 14</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="z8LSO2iUUVU" data-source="youtube"
+           data-title="Build India Series — Ep 15" data-cat="Broadcast · Discovery Channel">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/z8LSO2iUUVU/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Discovery Channel</div><div class="video-title">Build India Series — Ep 15</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 5 — ASSAM MOIDAM UNESCO
+  ═══════════════════════════════════════════════ -->
+  <div class="cat-section">
+    <div class="cat-header reveal">
+      <div class="cat-label">Assam Moidam — UNESCO Heritage Film</div>
+      <div class="cat-line"></div>
+      <div class="cat-count">02 Versions</div>
+    </div>
+  </div>
+  <div class="works-section">
+    <div class="video-grid" id="grid-assam">
+
+      <div class="video-card reveal" data-category="culture"
+           data-videoid="Jr9wdoVGIuc" data-source="youtube"
+           data-title="Assam Moidam UNESCO Film — Long Version" data-cat="Culture · UNESCO Heritage">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/Jr9wdoVGIuc/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">UNESCO Heritage Film</div><div class="video-title">Assam Moidam — Long Version</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="culture"
+           data-videoid="HhB0kXmDrwQ" data-source="youtube"
+           data-title="Assam Moidam UNESCO Film — Short Version" data-cat="Culture · UNESCO Heritage">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/HhB0kXmDrwQ/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">UNESCO Heritage Film</div><div class="video-title">Assam Moidam — Short Version</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 6 — UP TOURISM
+  ═══════════════════════════════════════════════ -->
+  <div class="cat-section">
+    <div class="cat-header reveal">
+      <div class="cat-label">UP Tourism</div>
+      <div class="cat-line"></div>
+      <div class="cat-count">09 Films</div>
+    </div>
+  </div>
+  <div class="works-section">
+    <div class="video-grid featured-first" id="grid-uptourism">
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="OXKZukWqCCk" data-source="youtube"
+           data-title="UP Tourism – Journey To Enlightenment" data-cat="Tourism · UP Tourism">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/OXKZukWqCCk/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">UP Tourism</div><div class="video-title">Journey To Enlightenment</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="9EtKFPC55WQ" data-source="youtube"
+           data-title="UP Tourism – Ganga The Eternal Flow" data-cat="Tourism · UP Tourism">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/9EtKFPC55WQ/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">UP Tourism</div><div class="video-title">Ganga The Eternal Flow</div></div>
+      </div>
+
+      <!-- TVCs -->
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="eIlNX1cijxQ" data-source="youtube"
+           data-title="UP Tourism TVC — Mahakumbh" data-cat="Tourism · TVC">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/eIlNX1cijxQ/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">UP Tourism TVC</div><div class="video-title">Mahakumbh</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="2mIAxkvfkPI" data-source="youtube"
+           data-title="UP Tourism TVC — Braj Rangotsav" data-cat="Tourism · TVC">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/2mIAxkvfkPI/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">UP Tourism TVC</div><div class="video-title">Braj Rangotsav</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="364Ls2o9Zd8" data-source="youtube"
+           data-title="UP Tourism TVC — The Land of Buddha" data-cat="Tourism · TVC">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/364Ls2o9Zd8/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">UP Tourism TVC</div><div class="video-title">The Land of Buddha</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="q4EOQjuEigc" data-source="youtube"
+           data-title="UP Tourism TVC — Bundelkhand Film" data-cat="Tourism · TVC">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/q4EOQjuEigc/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">UP Tourism TVC</div><div class="video-title">Bundelkhand Film</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="JKrm-td3vwM" data-source="youtube"
+           data-title="UP Tourism TVC — Jainism Film" data-cat="Tourism · TVC">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/JKrm-td3vwM/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">UP Tourism TVC</div><div class="video-title">Jainism Film</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="zEDagw-mNNg" data-source="youtube"
+           data-title="UP Tourism TVC — Ramayana Film" data-cat="Tourism · TVC">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/zEDagw-mNNg/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">UP Tourism TVC</div><div class="video-title">Ramayana Film</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="tourism"
+           data-videoid="dpFwEDKJg8U" data-source="youtube"
+           data-title="UP Tourism TVC — Spiritual Film" data-cat="Tourism · TVC">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/dpFwEDKJg8U/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">UP Tourism TVC</div><div class="video-title">Spiritual Film</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 7 — RAG RAG MEIN GANGA — DOORDARSHAN
+  ═══════════════════════════════════════════════ -->
+  <div class="cat-section">
+    <div class="cat-header reveal">
+      <div class="cat-label">Rag Rag Mein Ganga — Doordarshan</div>
+      <div class="cat-line"></div>
+      <div class="cat-count">04 Promos</div>
+    </div>
+  </div>
+  <div class="works-section">
+    <div class="video-grid" id="grid-ganga">
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="329756058" data-source="vimeo"
+           data-title="Rag Rag Mein Ganga S1 — Promo 1" data-cat="Broadcast · Doordarshan">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#2a2010 0%,#1a1505 100%);"></div>
+        <div class="video-overlay" style="background:linear-gradient(to top,rgba(10,8,5,0.5) 0%,transparent 60%)"></div>
+        <div class="video-frame-line"></div>
+        <div class="source-badge">Vimeo</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Doordarshan · Series S1</div><div class="video-title">Rag Rag Mein Ganga — S1 Promo 1</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="329756500" data-source="vimeo"
+           data-title="Rag Rag Mein Ganga S1 — Promo 2" data-cat="Broadcast · Doordarshan">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#2a2010 0%,#1a1505 100%);"></div>
+        <div class="video-overlay" style="background:linear-gradient(to top,rgba(10,8,5,0.5) 0%,transparent 60%)"></div>
+        <div class="video-frame-line"></div>
+        <div class="source-badge">Vimeo</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Doordarshan · Series S1</div><div class="video-title">Rag Rag Mein Ganga — S1 Promo 2</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="329753914" data-source="vimeo"
+           data-title="Rag Rag Mein Ganga S1 — Promo 3" data-cat="Broadcast · Doordarshan">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#2a2010 0%,#1a1505 100%);"></div>
+        <div class="video-overlay" style="background:linear-gradient(to top,rgba(10,8,5,0.5) 0%,transparent 60%)"></div>
+        <div class="video-frame-line"></div>
+        <div class="source-badge">Vimeo</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Doordarshan · Series S1</div><div class="video-title">Rag Rag Mein Ganga — S1 Promo 3</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="broadcast"
+           data-videoid="531311501" data-source="vimeo"
+           data-title="Rag Rag Mein Ganga S2 — Series Promo" data-cat="Broadcast · Doordarshan">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#2a2010 0%,#1a1505 100%);"></div>
+        <div class="video-overlay" style="background:linear-gradient(to top,rgba(10,8,5,0.5) 0%,transparent 60%)"></div>
+        <div class="video-frame-line"></div>
+        <div class="source-badge">Vimeo</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Doordarshan · Series S2</div><div class="video-title">Rag Rag Mein Ganga — S2 Series Promo</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 8 — INSIDE KASHI VISHWANATH
+  ═══════════════════════════════════════════════ -->
+  <div class="cat-section">
+    <div class="cat-header reveal">
+      <div class="cat-label">Inside Kashi Vishwanath</div>
+      <div class="cat-line"></div>
+      <div class="cat-count">01 Promo</div>
+    </div>
+  </div>
+  <div class="works-section">
+    <div class="video-grid" id="grid-kashi">
+
+      <div class="video-card reveal" data-category="culture"
+           data-videoid="663947320" data-source="vimeo"
+           data-title="Inside Kashi Vishwanath Promo" data-cat="Culture · Heritage">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#2a1808 0%,#180f04 100%);"></div>
+        <div class="video-overlay" style="background:linear-gradient(to top,rgba(10,8,5,0.5) 0%,transparent 60%)"></div>
+        <div class="video-frame-line"></div>
+        <div class="source-badge">Vimeo</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Culture · Heritage</div><div class="video-title">Inside Kashi Vishwanath Promo</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 9 — GI FILMS
+  ═══════════════════════════════════════════════ -->
+  <div class="cat-section">
+    <div class="cat-header reveal">
+      <div class="cat-label">GI — Geographical Indication Films</div>
+      <div class="cat-line"></div>
+      <div class="cat-count">06 Films</div>
+    </div>
+  </div>
+  <div class="works-section">
+    <div class="video-grid" id="grid-gi">
+
+      <div class="video-card reveal" data-category="gi"
+           data-videoid="O1hz5ynV4ZE" data-source="youtube"
+           data-title="GI — Metalwork and Wrought Iron" data-cat="GI Films · Craft">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/O1hz5ynV4ZE/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">GI Films · Craft</div><div class="video-title">Metalwork and Wrought Iron</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="gi"
+           data-videoid="z9EcPR7f7Xo" data-source="youtube"
+           data-title="GI — Textiles and Weaves of History" data-cat="GI Films · Textile">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/z9EcPR7f7Xo/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">GI Films · Textile</div><div class="video-title">Textiles and Weaves of History</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="gi"
+           data-videoid="dJD1dgCG-h4" data-source="youtube"
+           data-title="GI — Woodwork Paradise's Treasure" data-cat="GI Films · Craft">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/dJD1dgCG-h4/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">GI Films · Craft</div><div class="video-title">Woodwork Paradise's Treasure</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="gi"
+           data-videoid="cwVfixwWgAI" data-source="youtube"
+           data-title="GI — Leather: A Global Vogue" data-cat="GI Films · Craft">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/cwVfixwWgAI/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">GI Films · Craft</div><div class="video-title">Leather — A Global Vogue</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="gi"
+           data-videoid="HYolMx3HdeU" data-source="youtube"
+           data-title="GI — Coir & Carpet Weaving" data-cat="GI Films · Craft">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/HYolMx3HdeU/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">GI Films · Craft</div><div class="video-title">Coir &amp; Carpet Weaving</div></div>
+      </div>
+
+      <div class="video-card reveal" data-category="gi"
+           data-videoid="kL83iX-GE8o" data-source="youtube"
+           data-title="GI — Attar The Essence of India" data-cat="GI Films · Heritage">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/kL83iX-GE8o/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">GI Films · Heritage</div><div class="video-title">Attar — The Essence of India</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 10 — PROMOS & SHORTS
+  ═══════════════════════════════════════════════ -->
+  <div class="cat-section">
+    <div class="cat-header reveal">
+      <div class="cat-label">Promos &amp; Shorts</div>
+      <div class="cat-line"></div>
+      <div class="cat-count">02 Films</div>
+    </div>
+  </div>
+  <div class="works-section">
+    <div class="video-grid" id="grid-promos">
+
+      <div class="video-card reveal" data-category="promo"
+           data-videoid="IQqu_r8n6lk" data-source="youtube"
+           data-title="Extreme Tech: The Freight Corridor Promo" data-cat="Promo · Infrastructure">
+        <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/IQqu_r8n6lk/maxresdefault.jpg')"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">YouTube</div>
+        <div class="play-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1L13 8L1 15V1Z" fill="#c8a96e"/></svg></div>
+        <div class="video-info"><div class="video-cat">Promo · Infrastructure</div><div class="video-title">Extreme Tech: The Freight Corridor Promo</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 11 — GOOGLE DRIVE FILMS
+  ═══════════════════════════════════════════════ -->
+  <div class="cat-section">
+    <div class="cat-header reveal">
+      <div class="cat-label">More Films</div>
+      <div class="cat-line"></div>
+      <div class="cat-count">05 Films</div>
+    </div>
+  </div>
+  <div class="works-section">
+    <div class="video-grid" id="grid-drive">
+
+      <div class="video-card drive-card reveal" data-category="documentary"
+           data-drivelink="https://drive.google.com/file/d/1ciX39M4mf5t5_OdygcVYFOJu9ljcs75E/view"
+           data-source="drive"
+           data-title="The Biofuel Revolution" data-cat="Documentary · Energy">
+        <div class="video-thumb"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">Drive</div>
+        <div class="drive-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <path d="M6 36L14 22L22 36H6Z" fill="#c8a96e" opacity="0.6"/>
+            <path d="M24 8L38 32H24L10 32L24 8Z" fill="#c8a96e" opacity="0.3"/>
+            <path d="M26 36H42L34 22L26 36Z" fill="#c8a96e" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="play-btn" style="opacity:0.7;">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1L8 7L1 13V1Z" fill="#c8a96e"/><path d="M8 7H13" stroke="#c8a96e" stroke-width="1.5"/><path d="M11 4L14 7L11 10" stroke="#c8a96e" stroke-width="1.2"/></svg>
+        </div>
+        <div class="video-info"><div class="video-cat">Documentary · Energy</div><div class="video-title">The Biofuel Revolution</div><div class="video-sub">Open in Drive →</div></div>
+      </div>
+
+      <div class="video-card drive-card reveal" data-category="documentary"
+           data-drivelink="https://drive.google.com/file/d/1WcEWogoXxputqVP524Gf7dzx1_Lu1T2q/view"
+           data-source="drive"
+           data-title="Madhya Pradesh – A Geological Wonder Ep 1" data-cat="Documentary · Science">
+        <div class="video-thumb"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">Drive</div>
+        <div class="drive-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M6 36L14 22L22 36H6Z" fill="#c8a96e" opacity="0.6"/><path d="M24 8L38 32H24L10 32L24 8Z" fill="#c8a96e" opacity="0.3"/><path d="M26 36H42L34 22L26 36Z" fill="#c8a96e" opacity="0.5"/></svg>
+        </div>
+        <div class="play-btn" style="opacity:0.7;">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1L8 7L1 13V1Z" fill="#c8a96e"/><path d="M8 7H13" stroke="#c8a96e" stroke-width="1.5"/><path d="M11 4L14 7L11 10" stroke="#c8a96e" stroke-width="1.2"/></svg>
+        </div>
+        <div class="video-info"><div class="video-cat">Documentary · Science</div><div class="video-title">Madhya Pradesh – A Geological Wonder Ep 1</div><div class="video-sub">Open in Drive →</div></div>
+      </div>
+
+      <div class="video-card drive-card reveal" data-category="documentary"
+           data-drivelink="https://drive.google.com/file/d/1J1M0vzP2xxW2tPEalqIs2k0ZwQ4Ge7k/view"
+           data-source="drive"
+           data-title="Madhya Pradesh – A Geological Wonder Ep 2" data-cat="Documentary · Science">
+        <div class="video-thumb"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">Drive</div>
+        <div class="drive-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M6 36L14 22L22 36H6Z" fill="#c8a96e" opacity="0.6"/><path d="M24 8L38 32H24L10 32L24 8Z" fill="#c8a96e" opacity="0.3"/><path d="M26 36H42L34 22L26 36Z" fill="#c8a96e" opacity="0.5"/></svg>
+        </div>
+        <div class="play-btn" style="opacity:0.7;">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1L8 7L1 13V1Z" fill="#c8a96e"/><path d="M8 7H13" stroke="#c8a96e" stroke-width="1.5"/><path d="M11 4L14 7L11 10" stroke="#c8a96e" stroke-width="1.2"/></svg>
+        </div>
+        <div class="video-info"><div class="video-cat">Documentary · Science</div><div class="video-title">Madhya Pradesh – A Geological Wonder Ep 2</div><div class="video-sub">Open in Drive →</div></div>
+      </div>
+
+      <div class="video-card drive-card reveal" data-category="broadcast"
+           data-drivelink="https://drive.google.com/file/d/12N2l-QvL2n1e_CAWy05ETItwHOdrJDpJ/view"
+           data-source="drive"
+           data-title="RRTS Film (Now Namo Bharat)" data-cat="Documentary · Infrastructure">
+        <div class="video-thumb"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">Drive</div>
+        <div class="drive-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M6 36L14 22L22 36H6Z" fill="#c8a96e" opacity="0.6"/><path d="M24 8L38 32H24L10 32L24 8Z" fill="#c8a96e" opacity="0.3"/><path d="M26 36H42L34 22L26 36Z" fill="#c8a96e" opacity="0.5"/></svg>
+        </div>
+        <div class="play-btn" style="opacity:0.7;">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1L8 7L1 13V1Z" fill="#c8a96e"/><path d="M8 7H13" stroke="#c8a96e" stroke-width="1.5"/><path d="M11 4L14 7L11 10" stroke="#c8a96e" stroke-width="1.2"/></svg>
+        </div>
+        <div class="video-info"><div class="video-cat">Documentary · Infrastructure</div><div class="video-title">RRTS Film (Now Namo Bharat)</div><div class="video-sub">Open in Drive →</div></div>
+      </div>
+
+      <div class="video-card drive-card reveal" data-category="documentary"
+           data-drivelink="https://drive.google.com/file/d/1V0wPiazASZ28jg4vY2IADMw14Cl24M7x/view"
+           data-source="drive"
+           data-title="A Sugar Revolution" data-cat="Documentary · Agriculture">
+        <div class="video-thumb"></div>
+        <div class="video-overlay"></div><div class="video-frame-line"></div>
+        <div class="source-badge">Drive</div>
+        <div class="drive-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M6 36L14 22L22 36H6Z" fill="#c8a96e" opacity="0.6"/><path d="M24 8L38 32H24L10 32L24 8Z" fill="#c8a96e" opacity="0.3"/><path d="M26 36H42L34 22L26 36Z" fill="#c8a96e" opacity="0.5"/></svg>
+        </div>
+        <div class="play-btn" style="opacity:0.7;">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1L8 7L1 13V1Z" fill="#c8a96e"/><path d="M8 7H13" stroke="#c8a96e" stroke-width="1.5"/><path d="M11 4L14 7L11 10" stroke="#c8a96e" stroke-width="1.2"/></svg>
+        </div>
+        <div class="video-info"><div class="video-cat">Documentary · Agriculture</div><div class="video-title">A Sugar Revolution</div><div class="video-sub">Open in Drive →</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- STATS BAND -->
+  <div class="stats-band">
+    <div class="stat-item reveal">
+      <div class="stat-num">100<em>+</em></div>
+      <div class="stat-lbl">Films & Episodes</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num">Multiple</div>
+      <div class="stat-lbl">Broadcast Networks</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num">4<em>K</em></div>
+      <div class="stat-lbl">Resolution Standard</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num">11<em>+</em></div>
+      <div class="stat-lbl">Years of Vision</div>
+    </div>
+  </div>
+
+  <!-- CTA BAND -->
+  <div class="cta-band reveal">
+    <h2>Ready to make<br>your next <em>frame</em> count?</h2>
+    <div class="cta-buttons">
+      <a href="index.html#contact" class="btn-primary">Start a Project</a>
+      <a href="index.html" class="btn-ghost">← Back Home</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-copy">© 2025 Pachis Frame Private Limited · Mumbai</div>
+    <ul class="footer-social">
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Vimeo</a></li>
+      <li><a href="#">YouTube</a></li>
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+  </footer>
+
+</div><!-- /frame-content -->
+
+<script>
+// ── CURSOR ──
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+let mx = 0, my = 0, rx = 0, ry = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+function animCursor() {
+  cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
+  rx += (mx - rx) * 0.14; ry += (my - ry) * 0.14;
+  ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+  requestAnimationFrame(animCursor);
+}
+animCursor();
+document.querySelectorAll('a, button, .video-card, .filter-btn').forEach(el => {
+  el.addEventListener('mouseenter', () => { cursor.style.width='16px'; cursor.style.height='16px'; ring.style.width='56px'; ring.style.height='56px'; });
+  el.addEventListener('mouseleave', () => { cursor.style.width='8px'; cursor.style.height='8px'; ring.style.width='36px'; ring.style.height='36px'; });
+});
+
+// ── SPROCKETS ──
+function makeSprockets(id, count, vertical = false) {
+  const c = document.getElementById(id);
+  for (let i = 0; i < count; i++) {
+    const s = document.createElement('div');
+    s.className = vertical ? 'sprocket-v' : 'sprocket';
+    c.appendChild(s);
+  }
+}
+makeSprockets('sprockets-top', 60);
+makeSprockets('sprockets-bottom', 60);
+makeSprockets('sprockets-left', 30, true);
+makeSprockets('sprockets-right', 30, true);
+
+// ── FRAME COUNTER ──
+let frames = 0;
+const fc = document.getElementById('frameCounter');
+setInterval(() => {
+  frames++;
+  const f = frames % 25;
+  const s = Math.floor(frames / 25) % 60;
+  const m = Math.floor(frames / 1500) % 60;
+  const h = Math.floor(frames / 90000);
+  fc.textContent = `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}:${String(f).padStart(2,'0')}`;
+}, 40);
+
+// ── YOUTUBE THUMBNAIL FALLBACK ──
+// If maxresdefault is missing, fall back to hqdefault
+document.querySelectorAll('.video-thumb[style*="img.youtube.com"]').forEach(el => {
+  const src = el.style.backgroundImage;
+  const match = src.match(/vi\/([\w-]+)\//);
+  if (!match) return;
+  const id = match[1];
+  const img = new Image();
+  img.onload = function() {
+    // maxres returns a 120x90 if not found — check for that
+    if (this.naturalWidth <= 120) {
+      el.style.backgroundImage = `url('https://img.youtube.com/vi/${id}/hqdefault.jpg')`;
+    }
+  };
+  img.src = `https://img.youtube.com/vi/${id}/maxresdefault.jpg`;
+});
+
+// ── LIGHTBOX ──
+const lightbox = document.getElementById('lightbox');
+const lightboxContent = document.getElementById('lightboxContent');
+const lightboxTitle = document.getElementById('lightboxTitle');
+const lightboxCat = document.getElementById('lightboxCat');
+const lightboxClose = document.getElementById('lightboxClose');
+
+function openLightbox(card) {
+  const source = card.dataset.source;
+  const title = card.dataset.title;
+  const cat = card.dataset.cat;
+
+  lightboxTitle.textContent = title;
+  lightboxCat.textContent = cat;
+
+  if (source === 'youtube') {
+    const vid = card.dataset.videoid;
+    lightboxContent.innerHTML = `
+      <div class="lightbox-video-wrap">
+        <iframe src="https://www.youtube.com/embed/${vid}?autoplay=1&rel=0&modestbranding=1"
+          allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
+      </div>`;
+  } else if (source === 'vimeo') {
+    const vid = card.dataset.videoid;
+    lightboxContent.innerHTML = `
+      <div class="lightbox-video-wrap">
+        <iframe src="https://player.vimeo.com/video/${vid}?autoplay=1&color=c8a96e&title=0&byline=0"
+          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>`;
+  } else if (source === 'drive') {
+    const link = card.dataset.drivelink;
+    lightboxContent.innerHTML = `
+      <div class="drive-placeholder">
+        <div class="drive-placeholder-icon">
+          <svg width="56" height="56" viewBox="0 0 48 48" fill="none">
+            <path d="M6 36L14 22L22 36H6Z" fill="#c8a96e" opacity="0.6"/>
+            <path d="M24 8L38 32H24L10 32L24 8Z" fill="#c8a96e" opacity="0.3"/>
+            <path d="M26 36H42L34 22L26 36Z" fill="#c8a96e" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="drive-placeholder-text">${title}</div>
+        <div class="drive-placeholder-sub">Hosted on Google Drive</div>
+        <a href="${link}" target="_blank" rel="noopener" class="drive-open-link">
+          Open &amp; Watch ↗
+        </a>
+      </div>`;
+  }
+
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+  // Clear iframe to stop video
+  setTimeout(() => { lightboxContent.innerHTML = ''; }, 350);
+}
+
+// Click cards to open
+document.querySelectorAll('.video-card').forEach(card => {
+  card.addEventListener('click', () => openLightbox(card));
+});
+
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', e => {
+  if (e.target === lightbox) closeLightbox();
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeLightbox();
+});
+
+// ── FILTER ──
+const filterBtns = document.querySelectorAll('.filter-btn');
+const allCards = document.querySelectorAll('.video-card');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    allCards.forEach(card => {
+      if (filter === 'all' || card.dataset.category === filter) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  });
+});
+
+// ── SCROLL REVEAL ──
+const reveals = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+  });
+}, { threshold: 0.05 });
+reveals.forEach(r => obs.observe(r));
+
+// ── SHUTTER ──
+setTimeout(() => { document.getElementById('shutter').style.display = 'none'; }, 1400);
+</script>
+</body>
+</html>
